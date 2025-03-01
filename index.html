@@ -3,9 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DevBoard</title>
+    <!-- tailwindCss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        .poppins {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    </style>
 </head>
-<body>
+<body class="bg-[#F4F7FF] poppins pt-5 pb-10">
+    <header class="container mx-auto rounded-3xl mb-6 ">
+        <nav class="flex justify-between items-center rounded-3xl  bg-white pt-4 pb-4 pl-6 pr-6">
+
+            <div class="flex items-center gap-3 ">
+                <img class="" src="./assets/logo.png" alt="">
+                <h1 class="text-4xl text-[#00303C ]">Dev<span class="font-bold">Board</span></h1>
+            </div> 
+            <div class="flex  gap-11">
+                <div class="flex items-center gap-5 bg-[#F4F7FF] p-4 rounded-[32px] ">
+                    <img class="w-8 h-8" src="./assets/checkbox.png" alt="">
+                    <h2 class="text-4xl font-bold text-[#00303C]">23</h2>
+                </div>
+                <div class="p-3 rounded-full bg-[#F4F7FF] items-center">
+                    <img class="w-full " src="./assets/theme-btn.png" alt="">
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    <main class="container mx-auto rounded-3xl bg-white p-4 ">
+        <section class="bg-white">
+            <!-- left side container -->
+            <div class="w-[1164px] ">
+                <!-- top part -->
+                <div class="flex flex-wrap lg:flex-row md:flex-col gap-6">
+                    <!-- first box -->
+                    <div class="flex justify-center items-center gap-5 w-[263px] bg-[#F4F7FF] p-6 rounded-xl">
+                        <div>
+                            <img src="./assets/checkbox.png" alt="">
+                        </div>
+                        <div>
+                            <p class="text-[#00303C] font-medium">Task Assigned</p>
+                            <h2 class="text-4xl font-bold text-[#00303C]"   >05</h2> 
+                        </div>
+                    </div> 
+                    <!-- middle box -->
+                    <div class="flex justify-start items-center gap-5 w-[524px] bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] p-6 rounded-xl">
+                        <div>
+                            <img src="./assets/board.png" alt="">
+                        </div>
+                        <div>
+                            <p class="text-2xl text-white font-medium">Discover Something <br>New Today!</p>
+                        </div>
+                    </div> 
+                    <!-- third box -->
+                    <div class="flex justify-center items-center gap-5 w-[263px] bg-[#F4F7FF] p-6 rounded-xl">
+                        <div>
+                            <img src="./assets/calender.png" alt="">
+                        </div>
+                        <div>
+                            <p class="text-[#00303C] font-medium">Wed,</p>
+                            <h2 class="text-2xl font-bold text-[#00303C]">
+                                Jul 28 2025  
+                            </h2> 
+                        </div>
+                    </div> 
+                </div>
+                <!-- card-box container -->
+                <div class="">
+                    <!-- first card box -->
+                     <div class="rounded-2xl p-6 bg-[#F4F7FF] space-y-3">
+                         <button class="btn bg-white border-none">ShopEase</button>
+                         <h3 class="font-medium text-2xl text-[#00303C]">Fix Mobile Button Issue</h3>
+                         <p class="p-3 bg-white w-[294px]">
+                            Debug using Chrome DevTools, check for overlapping elements..
+                        </p>
+                         <div class="flex justify-between items-center">
+                            <div>
+                                <p>Deadline</p>
+                                <h4 class="font-medium text-[#00303C]">21 March 2025</h4>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary font-medium">Completed</button>
+                            </div>
+                         </div>
+                     </div>
+                    <!-- second card box -->
+                     <div class="rounded-2xl p-6 bg-[#F4F7FF] space-y-3">
+                         <button class="btn bg-white border-none">ShopEase</button>
+                         <h3 class="font-medium text-2xl text-[#00303C]">Fix Mobile Button Issue</h3>
+                         <p class="p-3 bg-white w-[294px]">
+                            Debug using Chrome DevTools, check for overlapping elements..
+                        </p>
+                         <div class="flex justify-between items-center">
+                            <div>
+                                <p>Deadline</p>
+                                <h4 class="font-medium text-[#00303C]">21 March 2025</h4>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary font-medium">Completed</button>
+                            </div>
+                         </div>
+                     </div>
+                    <!-- third card box -->
+                     <div class="rounded-2xl p-6 bg-[#F4F7FF] space-y-3">
+                         <button class="btn bg-white border-none">ShopEase</button>
+                         <h3 class="font-medium text-2xl text-[#00303C]">Fix Mobile Button Issue</h3>
+                         <p class="p-3 bg-white w-[294px]">
+                            Debug using Chrome DevTools, check for overlapping elements..
+                        </p>
+                         <div class="flex justify-between items-center">
+                            <div>
+                                <p>Deadline</p>
+                                <h4 class="font-medium text-[#00303C]">21 March 2025</h4>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary font-medium">Completed</button>
+                            </div>
+                         </div>
+                     </div>
+
+                </div>
+
+            </div>
+            <!-- right side container -->
+            <div>
+
+            </div>
+        </section>
+
+    </main>
     
 </body>
 </html>
