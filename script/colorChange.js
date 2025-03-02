@@ -9,6 +9,5 @@ document.getElementById("discover-box")
     .addEventListener("click", function (event) {
         event.preventDefault();
         const discoverBox = document.getElementById("discover-box");
-        // console.log(discoverBox);
-        window.location.href = "discover.html";
+        window.location.href = "blog.html";
     })
