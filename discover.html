@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <!-- tailwindCss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        .poppins {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    </style>
+</head>
+<body class="bg-[#F4F7FF] poppins pt-5 pb-10">
+    <header class="container mx-auto rounded-3xl mb-6 ">
+        <nav class="flex justify-between items-center rounded-3xl  bg-white pt-4 pb-4 pl-6 pr-6">
+
+            <div class="flex items-center gap-3 ">
+                <img class="" src="./assets/logo.png" alt="">
+                <h1 class="text-4xl text-[#00303C ]">Dev<span class="font-bold">Board</span></h1>
+            </div> 
+            <div class="flex  gap-11">
+                
+                <div class="p-3 rounded-full bg-[#F4F7FF] items-center">
+                    <button class="btn btn-primary font-medium text-white">Back to Desk</button>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    <main class="container mx-auto  gap-6">
+        <section class="max-h-screen space-y-3">
+            <h1 class="font-bold text-4xl text-center mb-8">Blogs</h1>
+
+            <div class="collapse bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-1" checked="checked" />
+                <div class="collapse-title font-semibold">Question-1: What are the different ways to select an element in the DOM?</div>
+                <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the registration process.</div>
+              </div>
+
+              <div class="collapse bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-1" />
+                <div class="collapse-title font-semibold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</div>
+                <div class="collapse-content text-sm">Click on "Forgot Password" on the login page and follow the instructions sent to your email.</div>
+              </div>
+
+              <div class="collapse bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-1" />
+                <div class="collapse-title font-semibold">Question-3: What is event delegation in the DOM?</div>
+                <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+              </div>
+              <div class="collapse bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-1" />
+                <div class="collapse-title font-semibold">Question-4: What is event bubbling in the DOM?</div>
+                <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+              </div>
+              <div class="collapse bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-1" />
+                <div class="collapse-title font-semibold">Question-3: What is event delegation in the DOM?</div>
+                <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
+              </div>
+
+        </section>
+
+    </main>
+
+    <script src="./script/colorChange.js"></script>
+    <script src="./script/date.js"></script>
+    
+</body>
+</html>
