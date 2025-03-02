@@ -6,3 +6,4 @@ const d = new Date().toLocaleDateString('en-GB', {
 });
 
 document.getElementById("date").innerHTML = d;
+ 

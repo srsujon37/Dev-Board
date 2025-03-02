@@ -4,3 +4,11 @@ function changeColor(){
     ','+ Math.round(Math.random())*255 +
     ','+ Math.round(Math.random())*255 + ')';
 }
+
+document.getElementById("discover-box")
+    .addEventListener("click", function (event) {
+        event.preventDefault();
+        const discoverBox = document.getElementById("discover-box");
+        // console.log(discoverBox);
+        window.location.href = "discover.html";
+    })
